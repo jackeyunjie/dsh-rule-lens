@@ -1,0 +1,7 @@
+# dsh-rule-lens bundle patch：把规则透镜插件追加进宿主插件树。
+# 本层在 @deepseek-ai/dsh-base 与 @deepseek-ai/dsh-web-app 之后应用，
+# 因此 webServer / settings / agent 等行都已就位，insert 追加到末尾即可。
+
+- insert:
+    - id: rule-lens
+      name: 'dsh-rule-lens'

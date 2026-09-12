@@ -1,0 +1,50 @@
+{
+  "name": "dsh-rule-lens",
+  "description": "规则透镜（RuleScope Lens）—— DeepSeek Harness 本地插件：AGENTS.md / rules 分层规则加载可视化、64KB 预算治理、写回防护与 FORBID 硬拦截、规则 Lint 与遵守率统计 | Rule visibility, budget governance & hard guards for DSH",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agents-md",
+    "context-engineering",
+    "rules",
+    "obsidian",
+    "guardrails",
+    "observability"
+  ],
+  "version": "0.2.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-home-paths": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-settings": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh-home-paths": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-llm": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-settings": "0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "3.18.1"
+  }
+}
