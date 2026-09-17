@@ -1,5 +1,9 @@
 # dsh-rule-lens · 规则透镜
 
+> **RuleScope 家族内核插件** · Every rule, in scope. · 让每条规则看得见、管得住、可审计
+
+![规则透镜面板：预算条 + 每个规则位置一行状态标记 + L5 预热开关](docs/assets/面板-规则位置与预算.png)
+
 DeepSeek Harness（dsh 0.1.0-rc.6）本地插件：把分散在各层的规则文件**看得清、管得住、可审计**。
 
 - **分层规则发现与注入**：`~/.agents/AGENTS.md`、`~/.agents/rules/`、`<工作区>/.agents/rules/` 启动即注入；`<子目录>/rules/` 在该目录第一次被 read/write/edit 触达后按需注入（每目录每会话一次）。
